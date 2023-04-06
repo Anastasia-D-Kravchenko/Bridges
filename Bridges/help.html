@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Мости</title>
+</head>
+<style>
+    #backs{
+        font-size: 1.5em;
+    }
+</style>
+<body>
+<div id="backs">Повернутися</div>
+<main>
+    <h1>Допоможи мешканцям добратися до іншого берега</h1>
+</main>
+<nav>
+    <div class="lvl lvl1" onclick="window.location.href = 'help1.html';">help 1</div>
+    <div class="lvl lvl1" onclick="window.location.href = 'help2.html';">help 2</div>
+    <div class="lvl lvl1" onclick="window.location.href = 'help3.html';">help 3</div>
+</nav>
+<nav style="margin-top: 15%;">
+    <div class="lvl lvl1" onclick="window.location.href = 'help4.html';">help 4</div>
+    <div class="lvl lvl1" onclick="window.location.href = 'help5.html';">help 5</div>
+    <div class="lvl lvl1" onclick="window.location.href = 'help6.html';">help 6</div>
+</nav>
+</body>
+<script>
+    $("#backs").click(function() {
+        $(location).attr('href', 'main.html');
+    });
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Мости</title>
+</head>
+<style>
+</style>
+<body>
+    <div id="back"></div>
+    <div id="backs">Повернутися</div>
+    <div class="restart btn">
+        <svg width="90%" height="100%" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line">
+        </svg>
+    </div>
+    <div class="continues btn">
+        <svg width="90%" height="100%" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line">
+        </svg>
+    </div>
+    <div id="heder">
+        <h1>Допоможи мешканцям добратися до іншого берега</h1>
+        <div id="hed">
+            <div id="hedmain"></div>
+        </div>
+        <img src="img/допомога1.png" alt="" id="img1">
+        <img src="img/Pngtreeyou win game interface creative_6051617.png" alt="" id="img2">
+    </div>
+</body>
+<script>
+    $(".restart").click(function() {
+        $(location).attr('href', 'help1.html');
+    });
+    $(".continues").click(function() {
+        $(location).attr('href', 'help2.html');
+    });
+    baza = 1;
+</script>
+<script src="js/game1.js"></script>
+</html>

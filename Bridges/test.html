@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" onmouseover="opor()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="img/pngegg (3).png" rel="shortcut icon" type="image/x-icon">
+    <link href="img/pngegg (3).png" rel="apple-touch-icon">
+    <title>Тест</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    :root{
+        font-family: 'Indie Flower', cursive;
+        overflow-x: hidden;
+    }
+    body {
+        overflow: hidden;
+    }
+    html {
+        background-image: none;
+        overflow: auto;
+        font-family: Gilroy;
+        height: 900px;
+    }
+
+    h5 {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 64px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 85px;
+        color: gold;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        margin: -8px;
+        background: floralwhite;
+    }
+
+    .back {
+        display: none;
+    }
+    @media screen and (max-width: 500px) {
+        .clickme{
+            max-width: 56%;
+        }
+        .backs{
+            width: 12%;
+        }
+    }
+    #img{
+        width: 250px;
+    }
+    #fors{
+        width: 28%;
+        position: absolute;
+        transform: rotate(339deg);
+        top: 5%;
+    }
+    #fors1{
+        width: 28%;
+        position: absolute;
+        transform: rotate(20deg);
+        top: 5%;
+        left: 71%;
+    }
+    #fors2{
+        width: 28%;
+        position: absolute;
+        transform: rotate(350deg);
+        top: 42%;
+        left: 35%;
+    }
+</style>
+
+<body>
+    <div class="img"></div>
+    <div class="jk">
+        <div id="backs">Повернутися</div>
+        <img src="img/joseph-barrientos-Ji_G7Bu1MoM-unsplash.jpg" alt="" id="fors">
+        <img src="img/photo_2023-04-05_15-32-16.jpg" alt="" id="fors1">
+        <img src="img/bruno-abatti-mEfIhOTH27w-unsplash.jpg" alt="" id="fors2">
+        <div class="bye0">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через морську протоку потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(1)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye1">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через глибоке озеро потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(2)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye2">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через вузьку ущелину потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(3)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye3">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через глибокий каньйон потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(4)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye4">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через засніжені гори потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(5)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye5">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через широку річку потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(6)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye6">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через промислову зону потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(7)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye7">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через пустелю потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(8)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye8">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через вулканічну зону потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(9)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye9">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Через глибокий яр потрібно використовувати:</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Підвісний міст')"><img src="img/265px-Clifton.bridge.arp.750pix.jpg" alt="" id="img"><br>Підвісний міст</button>
+                        <button class="endy noone as2" onclick="prov(2,'Трелювальний міст')"><img src="img/2-8.jpg" alt="" id="img"><br>Трелювальний міст</button>
+                        <button class="endy noone as3" onclick="prov(3,'Арочний міст')"><img src="img/Арковий_міст_в_Запоріжжі.jpeg" alt="" id="img"><br>Арочний міст</button>
+                        <button class="endy noone as4" onclick="prov(4,'Плавучий міст')"><img src="img/56692-2042359.jpg" alt="" id="img"><br>Плавучий міст</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(10)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye10">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Відповіді</div>
+                    <p class="gjoh" style="text-align: initial;">
+                        <div class="diver2 fd0">
+                            <div class="diver1">
+                                Через морську протоку потрібно використовувати:    <b class="b1" onmouseenter="myFunction(0)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(0)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(1)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd1 fd">
+                            <div class="diver1">
+                                Через глибоке озеро потрібно використовувати:    <b class="b2" onmouseenter="myFunction(1)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(0)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(2)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd2 fd">
+                            <div class="diver1">
+                                Через вузьку ущелину потрібно використовувати:    <b class="b3" onmouseenter="myFunction(2)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(1)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(3)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd3 fd">
+                            <div class="diver1">
+                                Через глибокий каньйон потрібно використовувати:    <b class="b4" onmouseenter="myFunction(3)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(2)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(4)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd4 fd">
+                            <div class="diver1">
+                                Через засніжені гори потрібно використовувати:    <b class="b5" onmouseenter="myFunction(4)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(3)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(5)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd5 fd">
+                            <div class="diver1">
+                                Через широку річку потрібно використовувати:    <b class="b6" onmouseenter="myFunction(5)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(4)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(6)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd6 fd">
+                            <div class="diver1">
+                                Через промислову зону потрібно використовувати:    <b class="b7" onmouseenter="myFunction(6)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(5)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(7)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd7 fd">
+                            <div class="diver1">
+                                Через пустелю потрібно використовувати:    <b class="b8" onmouseenter="myFunction(7)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(6)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(8)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd8 fd">
+                            <div class="diver1">
+                                Через вулканічну зону потрібно використовувати:    <b class="b9" onmouseenter="myFunction(8)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(7)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(9)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd9 fd">
+                            <div class="diver1">
+                                Через глибокий яр потрібно використовувати:    <b class="b10" onmouseenter="myFunction(9)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(8)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(9)">Вперед</button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="snackbar"></div>
+</body>
+<script src="js/main.js"></script>
+
+</html>

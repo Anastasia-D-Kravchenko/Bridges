@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Мости</title>
+</head>
+<style>
+    #backs{
+        font-size: 1.5em;
+    }
+</style>
+<body>
+    <div id="backs">Повернутися</div>
+    <main>
+        <h1>Пазл з мостами</h1>
+    </main>
+    <nav>
+        <div class="lvl lvl1" onclick="window.location.href = 'level1.html';">Level 1</div>
+        <div class="lvl lvl1" onclick="window.location.href = 'level2.html';">Level 2</div>
+        <div class="lvl lvl1" onclick="window.location.href = 'level3.html';">Level 3</div>
+    </nav>
+    <nav style="margin-top: 5%;">
+        <div class="lvl lvl1" onclick="window.location.href = 'level4.html';">Level 4</div>
+        <div class="lvl lvl1" onclick="window.location.href = 'level5.html';">Level 5</div>
+        <div class="lvl lvl1" onclick="window.location.href = 'level6.html';">Level 6</div>
+    </nav>
+    <nav style="margin-top: 5%;">
+        <div class="lvl lvl1" onclick="window.location.href = 'level7.html';">Level 7</div>
+        <div class="lvl lvl1" onclick="window.location.href = 'level8.html';">Level 8</div>
+        <div class="lvl lvl1" onclick="window.location.href = 'level9.html';">Level 9</div>
+    </nav>
+</body>
+<script>
+    $("#backs").click(function() {
+        $(location).attr('href', 'main.html');
+    });
+</script>
+</html>
