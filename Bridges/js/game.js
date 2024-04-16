@@ -45,7 +45,7 @@ function initPuzzle() {
     currentPiece = null;
     currentDroppedPiece = null;
     ctx.drawImage(img, 0, 0, mainWidth, mainHeight, 0, 0, mainWidth, mainHeight);
-    if (!gamesCount) createTitle("Давай почнемо!");
+    if (!gamesCount) createTitle("Let's get started!");
     buildPieces();
 }
 
@@ -208,7 +208,7 @@ function gameOver() {
     gamesCount++;
     initPuzzle();
     if (maxCount == 0) maxCount = count;
-    createTitle('Ти переміг за ' + count + ' спроб, ' + (count <= maxCount ? 'це новий рекорд' : 'нажаль рекорд ' + maxCount + " спроби") + '... Сбробуещь ще?');
+    createTitle('You won in ' + count + ' attempts, ' + (count <= maxCount ? 'this is a new record' : 'unfortunately, the record is ' + maxCount + " attempts") + '... More work?');
     if (count < maxCount) maxCount = count;
     count = 0;
 }
