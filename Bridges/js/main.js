@@ -111,7 +111,7 @@ function opor() {
         }
     }
 };
-let masTex = ['Підвісний міст', 'Трелювальний міст', 'Підвісний міст', 'Арочний міст', 'Трелювальний міст', 'Підвісний міст', 'Арочний міст', 'Трелювальний міст', 'Плавучий міст', 'Арочний міст']
+let masTex = ['Suspension bridge', 'Skidding bridge', 'Suspension bridge', 'Arch bridge', 'Skidding bridge', 'Suspension bridge', 'Arch bridge', 'Skidding bridge', 'Floating bridge', 'Arch bridge']
 function myFunction(a) {
     var x = document.querySelector('#snackbar');
     x.innerHTML = `${masTex[a]}`;
